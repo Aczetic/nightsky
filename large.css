@@ -1,0 +1,382 @@
+#hero {
+  width: 100%;
+  height: 100vh;
+  background-color: #272846;
+  background-image: url("./background.png"),
+    linear-gradient(to bottom, #2e4070 0%, rgba(0, 0, 0, 0) 75%);
+  /* background-image:url('./background.png'); */
+  background-position: 30% 73%;
+  position: relative;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+
+#heroVideo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  clip-path: polygon(0% 0%, 100% 0%, 100% 72%, 0% 70%);
+  mix-blend-mode: lighten;
+  transform: translateY(-200px);
+  z-index: 0;
+}
+
+#heroTextContainerBox {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  margin-left: -20%;
+  margin-top: -5%;
+}
+
+#heroTextContainer {
+  position: relative;
+  /* left:20%; */
+  display: inline-block;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  font-family: "MyOwn";
+  color: rgba(255, 255, 255, 1);
+  box-sizing: content-box;
+  /* top:cacl(50% - 170px); */
+}
+#smallHeading {
+  font-size: 2em;
+  font-weight: bolder;
+}
+#largeHeading {
+  font-size: 4em;
+  font-weight: lighter;
+  margin-bottom: 15px;
+}
+#heroButtonContainer {
+  position: relative;
+  width: 100%;
+}
+
+.heroTextContainerButtons:hover {
+  box-shadow: 0 0 100px 2px rgba(240, 238, 149, 0.9);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  background-color: rgba(0, 0, 0, 0.3);
+  color: rgba(240, 238, 149, 01.8em);
+}
+
+.heroTextContainerButtons {
+  padding: 10px;
+  text-align: center;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  transition: 0.6s;
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-family: "MyOwn";
+  font-size: 1.7em;
+  /* backdrop-filter:blur(20px); */
+  text-shadow: 0 0 20px rgba(100, 100, 100, 0.7);
+  /* set the transparent border on no hover situation so that when actually hovered the border created will not create a movement artifact */
+}
+
+#getStartedButton {
+  margin-right: 10px;
+}
+#nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  padding-right: 0;
+  position: relative;
+  z-index: 100;
+}
+#logo {
+  height: 50px;
+  width: 50px;
+  background-image: url("./SPACED_logo.png");
+  background-size: contain;
+  opacity: 0.8;
+  transform: translate(20px);
+  background-repeat: no-repeat;
+}
+#navBarHolder {
+  position: fixed;
+  right: 0;
+}
+
+.ham {
+  display: none;
+}
+
+ul {
+  list-style-type: none;
+  font-size: 1.8em;
+  font-family: "MyOwn";
+  color: rgba(255, 255, 255, 0.7);
+  display: flex;
+  justify-content: space-around;
+  width: 12em;
+  box-sizing: border-box;
+}
+
+li:hover {
+  box-shadow: 0 0 100px 2px rgba(240, 238, 149, 0.9);
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.3);
+  color: rgba(240, 238, 149, 01.8em);
+}
+
+li {
+  padding: 10px;
+  text-align: center;
+  border: 2px solid rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  transition: 0.6s;
+  /* set the transparent border on no hover situation so that when actually hovered the border created will not create a movement artifact */
+}
+a {
+  text-align: center;
+  font-family: "MyOwn";
+  color: rgba(255, 255, 255, 0.9);
+  text-decoration: none;
+}
+#linearGradientCover {
+  position: absolute;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 0%,
+    #272846 100%
+  );
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+}
+#logoBox {
+  width: 100%;
+  background-color: #272846;
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: center;
+  background-position: 80% center;
+  position: relative;
+  z-index: 0;
+  background-image: linear-gradient(
+    to right,
+    rgba(35, 35, 65, 255) 0%,
+    rgba(39, 40, 70, 255) 30%,
+    rgba(39, 40, 70, 255) 70%,
+    rgba(35, 38, 70, 255) 100%
+  );
+  margin-bottom: 100px;
+}
+
+.companyLogo {
+  width: 150px;
+  height: 70px;
+  background-size: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.7;
+  padding: 0 10px 0 10px;
+  position: relative;
+}
+
+#infoBoxContainer {
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  font-family: "MyOwn";
+  color: white;
+  margin-bottom: calc(350px - 12vw);
+  box-sizing: border-box;
+}
+
+#miniTitle {
+  color: #646ff2;
+  font-weight: bold;
+  font-size: 1.7em;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+#largeTitle {
+  font-size: 2.2em;
+  letter-spacing: 2px;
+}
+
+#miniInfo {
+  margin-bottom: 50px;
+  font-size: 1.3em;
+  letter-spacing: 1px;
+}
+#infoBox {
+  width: 85%;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  box-sizing: border-box;
+  padding-bottom: 1px;
+}
+#moreInfoBox {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.info {
+  width: 40%;
+  box-sizing: border-box;
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+}
+.icons {
+  height: 50px;
+  width: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+.text {
+  width: 80%;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.cardContainer {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "MyOwn";
+  color: white;
+  margin-bottom: 5vw;
+  text-align: justify;
+  padding: 0 10px;
+}
+
+.cardImage {
+  height: 400px;
+  width: 400px;
+  background-image: url("./moon.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.cardInfoBox {
+  display: flex;
+  width: 50%;
+  height: 100%;
+  flex-direction: column;
+  margin-left: 10px;
+  padding: 0 10px 0 0;
+}
+
+.cardSmallTitle {
+  color: #646ff2;
+  font-weight: bold;
+  font-size: 1.7em;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.cardLargeTitle {
+  font-size: 3.5em;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+
+.mainCardInfo {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5em;
+  font-weight: bold;
+  line-height: 28px;
+}
+
+.cardButtonsContainer {
+  margin-top: 30px;
+}
+
+.cardButtons {
+  padding: 10px;
+  text-align: center;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  transition: 0.6s;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: white;
+  font-family: "MyOwn";
+  font-weight: bold;
+  font-size: 1.7em;
+  /* backdrop-filter:blur(20px); */
+  text-shadow: 0 0 20px rgba(100, 100, 100, 0.7);
+}
+
+#footerBackground {
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-image: url(./lower_background.png);
+  background-position: 50%;
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  align-items: center;
+}
+
+#footerLogo {
+  height: 100px;
+  width: 100px;
+  background-image: url("./SPACED_logo.png");
+  background-size: contain;
+  opacity: 0.8;
+  transform: translate(20px);
+  background-repeat: no-repeat;
+}
+
+#footerLinksContainer {
+  width: 50%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  column-gap: 15%;
+  row-gap: 20px;
+}
+
+#footerGradient {
+  background-image: linear-gradient(
+    rgba(39, 40, 70, 1) 0%,
+    rgba(39, 40, 70, 0.8) 30%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.footerLinks {
+  font-family: "MyOwn";
+  color: white;
+  font-size: 1.8em;
+  height: fit-content;
+  text-align: center;
+  /* z-index so that the text gets above the gradient which is covering them */
+}
+
+.footerLinks > a {
+  color: white;
+}
